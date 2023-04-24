@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Price ($)</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Cost ($)</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name">Milk</td>
+                <td class="price">2.52</td>
+                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="cost"></td>
+                <td><button class="btn btn-xs remove">REMOVE</button></td>
+              </tr>
+              <tr>
+                <td class="name">Eggs</td>
+                <td class="price">2.92</td>
+                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="cost"></td>
+                <td><button class="btn btn-xs remove">REMOVE</button></td>
+              </tr>
+              <tr>
+                <td class="name">Butter</td>
+                <td class="price">3.98</td>
+                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="cost"></td>
+                <td><button class="btn btn-xs remove">REMOVE</button></td>
+              </tr>
+              <tr>
+                <td class="name">Bread</td>
+                <td class="price">3.34</td>
+                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="cost"></td>
+                <td><button class="btn btn-xs remove">REMOVE</button></td>
+              </tr>
+              <tr>
+                <td class="name">Peanut Butter</td>
+                <td class="price">6.78</td>
+                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="cost"></td>
+                <td><button class="btn btn-xs remove">REMOVE</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <form id="addItem" class="col-12">
+          <input class="mx-2" name="name" type="text" placeholder="Item" required="">
+          <input class="mx-2" name="price" type="number" placeholder="Price">
+          <input id="qty" class="mx-2" name="qty" type="number" placeholder="Quantity">
+          <button class="btn btn-primary btn-small">Add</button>
+        </form>
+        <div class="col-12 col-md-6 bg-success">
+          <h3>
+            Total : = $
+            <span id="totalCart"></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

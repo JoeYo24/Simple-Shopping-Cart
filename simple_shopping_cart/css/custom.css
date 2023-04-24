@@ -1,0 +1,10 @@
+h1 {
+    font-weight: bold;
+}
+thead {
+    background-color: gray;
+}
+#qty {
+    font-size: 15px;
+    width: 80px;
+}
