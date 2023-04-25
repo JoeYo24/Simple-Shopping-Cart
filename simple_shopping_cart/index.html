@@ -33,35 +33,35 @@
               <tr>
                 <td class="name">Milk</td>
                 <td class="price">2.52</td>
-                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="qty"><input id="qty" type="number" min="0" value="0"></td>
                 <td class="cost"></td>
                 <td><button class="btn btn-xs remove">REMOVE</button></td>
               </tr>
               <tr>
                 <td class="name">Eggs</td>
                 <td class="price">2.92</td>
-                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="qty"><input id="qty" type="number" min="0" value="0"></td>
                 <td class="cost"></td>
                 <td><button class="btn btn-xs remove">REMOVE</button></td>
               </tr>
               <tr>
                 <td class="name">Butter</td>
                 <td class="price">3.98</td>
-                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="qty"><input id="qty" type="number" min="0" value="0"></td>
                 <td class="cost"></td>
                 <td><button class="btn btn-xs remove">REMOVE</button></td>
               </tr>
               <tr>
                 <td class="name">Bread</td>
                 <td class="price">3.34</td>
-                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="qty"><input id="qty" type="number" min="0" value="0"></td>
                 <td class="cost"></td>
                 <td><button class="btn btn-xs remove">REMOVE</button></td>
               </tr>
               <tr>
                 <td class="name">Peanut Butter</td>
                 <td class="price">6.78</td>
-                <td class="qty"><input id="qty" type="number" value="0"></td>
+                <td class="qty"><input id="qty" type="number" min="0" value="0"></td>
                 <td class="cost"></td>
                 <td><button class="btn btn-xs remove">REMOVE</button></td>
               </tr>
@@ -71,11 +71,11 @@
         <form id="addItem" class="col-12">
           <input class="mx-2" name="name" type="text" placeholder="Item" required="">
           <input class="mx-2" name="price" type="number" placeholder="Price">
-          <input id="qty" class="mx-2" name="qty" type="number" placeholder="Quantity">
+          <input id="qty" class="mx-2" name="qty" min="0" type="number" placeholder="Quantity">
           <button class="btn btn-primary btn-small">Add</button>
         </form>
         <div class="col-12 col-md-6 bg-success">
-          <h3>
+          <h3 class="text-center">
             Total : = $
             <span id="totalCart"></span>
           </h3>
