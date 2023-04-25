@@ -30,12 +30,12 @@ var updateCartCost = function () {
 $(document).ready(function () {
     updateCartCost();
 
-    $('.btn.remove').on('click', function (event) {
+    $(document).on('click', '.btn.remove', function (event) {
         $(this).closest('tr').remove();
         updateCartCost();
     });
 
-    $('tr input').on('input', function () {
+    $(document).on('input', 'tr input', function () {
         updateCartCost();
     });
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
         $('tbody').append('<tr>' +
         '<td class="name">' + name + '</td>' +
         '<td class="price">' + price + '</td>' +
-        '<td class="qty"><input type="number" value="' + qty + '" /></td>' +
+        '<td class="qty"><input id="qty" type="number" min="0" value="' + qty + '" /></td>' +
         '<td class="cost">' + cost + '</td>' +
         '<td><button class="btn btn-xs remove">REMOVE</button></td>' +
         '</tr>') 

@@ -1,10 +1,24 @@
 h1 {
     font-weight: bold;
+    color: black;
 }
 thead {
-    background-color: gray;
+    background-color: black;
+    color: white;
 }
 #qty {
     font-size: 15px;
     width: 80px;
+}
+.name {
+    font-weight: bold;
+}
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+   
+}
+#addItem {
+    margin-bottom: 10px;
 }
